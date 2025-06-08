@@ -1,4 +1,9 @@
- public class ItemPedido
+using System;
+using ProvaPraticaPOO.Classes;
+
+namespace ProvaPraticaPOO.Classes
+{
+    public class ItemPedido
     {
         public Produto Produto { get; set; }
         public int Quantidade { get; set; }
@@ -21,3 +26,5 @@
             return Produto.Preco * Quantidade;
         }
     }
+}
+

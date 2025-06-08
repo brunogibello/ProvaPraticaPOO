@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using ProvaPraticaPOO.Classes;
 
 namespace ProvaPraticaPOO.Factories

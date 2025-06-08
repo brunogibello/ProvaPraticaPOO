@@ -1,25 +1,31 @@
-public class Pedido
+using System;
+using System.Collections.Generic;
+
+namespace ProvaPraticaPOO.Classes
 {
-    public int Id { get; set; }
-    public Cliente Cliente { get; set; }
-    public List<ItemPedido> Itens { get; set; }
-    public DateTime Data { get; set; }
-    public decimal ValorTotal { get; set; }
-
-    public Pedido(int id, Cliente cliente, List<ItemPedido> itens, DateTime data)
+    public class Pedido
     {
-        Id = id;
-        Cliente = cliente ?? throw new ArgumentNullException(nameof(cliente));
-        Itens = itens ?? throw new ArgumentNullException(nameof(itens));
+        public int Id { get; set; }
+        public Cliente Cliente { get; set; }
+        public List<ItemPedido> Itens { get; set; }
+        public DateTime Data { get; set; }
+        public decimal ValorTotal { get; set; }
 
-        if (itens.Count == 0)
-            throw new ArgumentException("Pedido deve conter pelo menos um item.");
+        public Pedido(int id, Cliente cliente, List<ItemPedido> itens, DateTime data)
+        {
+            Id = id;
+            Cliente = cliente ?? throw new ArgumentNullException(nameof(cliente));
+            Itens = itens ?? throw new ArgumentNullException(nameof(itens));
 
-        Data = data;
-        ValorTotal = 0;
+            if (itens.Count == 0)
+                throw new ArgumentException("Pedido deve conter pelo menos um item.");
+
+            Data = data;
+            ValorTotal = 0;
+        }
+        public void AtualizarValorTotal(decimal total)
+        {
+            ValorTotal = total;
+        }
     }
-    public void AtualizarValorTotal(decimal total)
-    {
-        ValorTotal = total;
-    }
-    }
+}

@@ -1,6 +1,8 @@
 ﻿using ProvaPraticaPOO.Classes;
 using ProvaPraticaPOO.Services;
 using ProvaPraticaPOO.Services.Descontos;
+using ProvaPraticaPOO.Logging;
+using ProvaPraticaPOO.Factories;
 
 class Program
 {
@@ -28,7 +30,7 @@ class Program
         //log
         ILogService logger = new ConsoleLogService();
 
-        var pedidoService = new PedidoService(desconto);
+        var pedidoService = new PedidoService(desconto, logger);
         pedidoService.ProcessarPedido(pedido);
 
         Console.WriteLine($"Valor total com desconto: R$ {pedido.ValorTotal:F2}");

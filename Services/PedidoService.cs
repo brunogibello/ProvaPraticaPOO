@@ -1,9 +1,10 @@
-namespace ProvaPraticaPOO.Services
-{
     using ProvaPraticaPOO.Classes;
     using ProvaPraticaPOO.Services.Descontos;
+    using ProvaPraticaPOO.Logging;
     using System.Linq;
 
+namespace ProvaPraticaPOO.Services
+{
     public class PedidoService
     {
         private readonly IDescontoStrategy _descontoStrategy;

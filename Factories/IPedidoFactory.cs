@@ -1,6 +1,4 @@
-using ProvaPraticaPOO.Classes;
-
-namespace ProvaPraticaPOO.Factories
+namespace ProvaPraticaPOO.Classes
 {
     public interface IPedidoFactory
     {

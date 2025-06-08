@@ -5,7 +5,7 @@ namespace ProvaPraticaPOO.Services.Descontos
 
     public class DescontoPorQuantidade : IDescontoStrategy
     {
-        private readonly int quantidadeMinima;
+        private readonly int _quantidadeMinima;
         private readonly decimal _percentual;
 
         public DescontoPorQuantidade(int quantidadeMinima, decimal percentual)
