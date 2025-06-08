@@ -1,0 +1,15 @@
+C:\Users\bruno\Desktop\ProvaPraticaPOO\bin\Debug\net9.0\ProvaPraticaPOO.exe
+C:\Users\bruno\Desktop\ProvaPraticaPOO\bin\Debug\net9.0\ProvaPraticaPOO.deps.json
+C:\Users\bruno\Desktop\ProvaPraticaPOO\bin\Debug\net9.0\ProvaPraticaPOO.runtimeconfig.json
+C:\Users\bruno\Desktop\ProvaPraticaPOO\bin\Debug\net9.0\ProvaPraticaPOO.dll
+C:\Users\bruno\Desktop\ProvaPraticaPOO\bin\Debug\net9.0\ProvaPraticaPOO.pdb
+C:\Users\bruno\Desktop\ProvaPraticaPOO\obj\Debug\net9.0\ProvaPraticaPOO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bruno\Desktop\ProvaPraticaPOO\obj\Debug\net9.0\ProvaPraticaPOO.AssemblyInfoInputs.cache
+C:\Users\bruno\Desktop\ProvaPraticaPOO\obj\Debug\net9.0\ProvaPraticaPOO.AssemblyInfo.cs
+C:\Users\bruno\Desktop\ProvaPraticaPOO\obj\Debug\net9.0\ProvaPraticaPOO.csproj.CoreCompileInputs.cache
+C:\Users\bruno\Desktop\ProvaPraticaPOO\obj\Debug\net9.0\ProvaPraticaPOO.sourcelink.json
+C:\Users\bruno\Desktop\ProvaPraticaPOO\obj\Debug\net9.0\ProvaPraticaPOO.dll
+C:\Users\bruno\Desktop\ProvaPraticaPOO\obj\Debug\net9.0\refint\ProvaPraticaPOO.dll
+C:\Users\bruno\Desktop\ProvaPraticaPOO\obj\Debug\net9.0\ProvaPraticaPOO.pdb
+C:\Users\bruno\Desktop\ProvaPraticaPOO\obj\Debug\net9.0\ProvaPraticaPOO.genruntimeconfig.cache
+C:\Users\bruno\Desktop\ProvaPraticaPOO\obj\Debug\net9.0\ref\ProvaPraticaPOO.dll
