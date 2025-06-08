@@ -6,7 +6,7 @@ class Program
 {
     static void Main(string[] args)
     {
-         var cliente = new Cliente(1, "Maria", "maria@email.com", "123.456.789-00");
+        var cliente = new Cliente(1, "Maria", "maria@email.com", "123.456.789-00");
 
         var produto1 = new Produto(1, "Camisa", 100m, "Roupas");
         var produto2 = new Produto(2, "Calça", 200m, "Roupas");
@@ -32,6 +32,16 @@ class Program
         pedidoService.ProcessarPedido(pedido);
 
         Console.WriteLine($"Valor total com desconto: R$ {pedido.ValorTotal:F2}");
+
+        //criando lista de pedidos
+        var pedidos = new List<Pedido> { pedido };
+            
+        //exibindo relatório
+        var relatorio = new RelatorioService(logger);
+        relatorio.ExibirRelatorio(pedidos);
     }
+    
+
+
 }
 
