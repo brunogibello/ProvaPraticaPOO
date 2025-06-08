@@ -5,23 +5,22 @@ namespace ProvaPraticaPOO.Services.Descontos
 
     public class DescontoPorQuantidade : IDescontoStrategy
     {
-        private int quantidadeMinima;
-        private decimal percentualDesconto;
+        private readonly int quantidadeMinima;
+        private readonly decimal _percentual;
 
-        public DescontoPorQuantidade(int quantidadeMinima, decimal percentualDesconto)
+        public DescontoPorQuantidade(int quantidadeMinima, decimal percentual)
         {
-            this.quantidadeMinima = quantidadeMinima;
-            this.percentualDesconto = percentualDesconto;
+            _quantidadeMinima = quantidadeMinima;
+            _percentual = percentual;
         }
 
         public decimal CalcularDesconto(Pedido pedido)
         {
-            var totalItens = pedido.Itens.Sum(item => item.Quantidade);
+           int quantidadeTotal = pedido.Itens.Sum(item => item.Quantidade);
 
-            if (totalItens >= quantidadeMinima)
+            if (quantidadeTotal >= _quantidadeMinima)
             {
-                var total = pedido.Itens.Sum(item => item.Subtotal());
-                return total * percentualDesconto;
+                return pedido.Itens.Sum(item => item.Subtotal()) * _percentual;
             }
 
             return 0;

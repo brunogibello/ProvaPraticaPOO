@@ -5,22 +5,23 @@ namespace ProvaPraticaPOO.Services.Descontos
 
     public class DescontoPorCategoria : IDescontoStrategy
     {
-        private string categoriaAlvo;
-        private decimal percentualDesconto;
+        private readonly string _categoriaAlvo;
+        private readonly decimal _percentual;
 
-        public DescontoPorCategoria(string categoriaAlvo, decimal percentualDesconto)
+
+        public DescontoPorCategoria(string categoriaAlvo, decimal percentual)
         {
-            this.categoriaAlvo = categoriaAlvo;
-            this.percentualDesconto = percentualDesconto;
+            _categoriaAlvo = categoriaAlvo;
+            _percentual = percentual;
         }
 
         public decimal CalcularDesconto(Pedido pedido)
         {
             var totalCategoria = pedido.Itens
-                .Where(item => item.Produto.Categoria == categoriaAlvo)
+                .Where(item => item.Produto.Categoria == _categoriaAlvo)
                 .Sum(item => item.Subtotal());
 
-            return totalCategoria * percentualDesconto;
+            return totalCategoria * _percentual;
         }
     }
 }
