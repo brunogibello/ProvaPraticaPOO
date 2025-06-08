@@ -25,8 +25,10 @@ class Program
 
         //desconto
         var desconto = new DescontoPorCategoria("Roupas", 0.10m);
-        var pedidoService = new PedidoService(desconto);
+        //log
+        ILogService logger = new ConsoleLogService();
 
+        var pedidoService = new PedidoService(desconto);
         pedidoService.ProcessarPedido(pedido);
 
         Console.WriteLine($"Valor total com desconto: R$ {pedido.ValorTotal:F2}");
